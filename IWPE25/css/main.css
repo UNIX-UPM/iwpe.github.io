@@ -1,0 +1,137 @@
+@media (max-width: 768px) {
+  h1,h3 {
+    font-size: 3.2ex;
+  }
+  .jumbotron {
+    font-size: 1.1ex;
+  }
+}
+
+/* http://colorschemedesigner.com/#2h51Tp78Ew0w0 */
+a,a:hover {
+  color: #ff8900; /* 2015 Color */
+  color: #e30c00; /* 2016 Color */
+
+}
+
+body {
+  font-family: "Source Sans","Helvetica Neue","Helvetica","Arial","sans-serif";
+  padding-top: 40px;
+}
+
+h1,h3 {
+  font-family: "Merriweather","Palatino";
+  margin-top: 1.7ex;
+}
+
+.footer {
+  border-top: 1px solid #000000;
+  margin-top: 4ex;
+  padding: 4ex;
+  vertical-align: middle;
+}
+
+
+.jumbotron {
+  background-color: #086fa1; /* 2015 Color */
+  background-color: #ffcc00; /* 2016 Color */	
+
+  border-bottom: 1px solid #000000;
+  color: #ffffff;
+  margin-bottom: 0;
+  padding-bottom: 3ex;
+  text-align: center;
+}
+
+.jumbotron .container {
+  max-width: 768px;
+}
+
+.jumbotron .location {
+  font-family: "Source Sans","Helvetica Neue","Helvetica","Arial","sans-serif";
+  font-size: 3ex;
+}
+
+.jumbotron .title {
+  color: white;
+  font-family: "Merriweather","Palatino";
+  font-size: 6.3ex;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+.jumbotron .sponsors {
+  font-family: "Source Sans","Helvetica Neue","Helvetica","Arial","sans-serif";
+  font-size: 2.8ex;
+}
+
+.jumbotron .btn-lg {
+  background-image: none;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-size: 2ex;
+  text-shadow: none;
+}
+
+.jumbotron .btn-lg:hover {
+  background-color: white;
+  color: #000000;
+}
+
+.list-group-item {
+  border: 0;
+}
+
+.logo {
+  max-height: 6em;
+}
+
+.logo-workshops {
+  width: 48px;
+  height: 48px;
+}
+
+.navbar-header .navbar-brand {
+  color: white;
+}
+
+.navbar-toggle {
+  color: white;
+}
+
+.table {
+  margin-top: 1.5em;
+}
+
+.table td, .table th {
+  border-top: none !important;
+}
+
+.table-nonfluid {
+  width: auto;
+}
+
+.table-workshops {
+  font-size: 1.5em;
+}
+
+.table-workshops td {
+  vertical-align: middle !important;
+}
+
+.row-same-height {
+  display: table;
+  width: 100%;
+  padding-bottom: 1.5em;
+}
+
+.col-xs-height {
+  display: table-cell;
+  float: none !important;
+}
+
+.col-middle {
+  vertical-align: middle;
+}
+
+
