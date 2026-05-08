@@ -61,11 +61,100 @@ July 6, 2026, Lisbon (Portugal)</h2>
 <p></p>
 
 <section class="article-content">
-  <h2>Program — Coming Soon</h2>
-  <p>The program for IWPE is not yet available. This page will be updated when the program is finalized.</p>
-  <p>For schedule updates and deadlines, please see the <a href="./paper-publications-deadlines.html">Deadlines</a> page.</p>
+<h3>July 6th</h3>
+<h2>Lisbon, Portugal</h2>
+
+<table class="program" width="100%">
+	<tbody>
+		<tr style="background-color: #51b59042;">
+			<td style="width: 110px; text-align: center;">09:30-09:40</td>
+			<td><b>Welcome, introductions and opening remarks</b></td>
+		</tr>
+
+		<tr style="background-color: #51b59042;">
+			<td style="width: 110px; text-align: center; vertical-align: top;">09:40-10:30</td>
+			<td>
+				<b>- Accountability by Design in Agentic AI</b>, <u>Keynote</u> by Isabel Wagner.
+				<p style="margin: 0.4em 0 0.6em 0;"><i>As AI systems become increasingly agentic and capable of autonomous planning and action, accountability can no longer be treated as a downstream concern, it must be designed into the system from the outset. This keynote argues that accountability by design is a core requirement for trustworthy agentic AI, at the intersection of technical architecture, organizational governance, and regulatory expectations.</i></p>
+
+				<p style="margin: 0 0 0.6em 0;"><i>Building on principles from safety engineering, the talk reframes accountability as a system property that depends on traceability, structured allocation of responsibilities across actors, and mechanisms for monitoring, intervention, and redress. In agentic settings, where actions propagate across contexts and affect third parties, failures are rarely attributable to a single component, making causal analysis, logging, and feedback loops critical design features.</i></p>
+
+				<p style="margin: 0;"><i>The talk highlights key design challenges, including meaningful human control, consent boundaries, complaint and incident handling, and risk management strategies. It will also address the tension between increasing autonomy and the need for control, arguing that higher autonomy requires stronger built-in constraints and oversight.</i></p>
+			</td>
+		</tr>
+
+		<tr>
+			<td style="width: 110px; text-align: center;">10:30-11:00</td>
+			<td>Coffee Break</td>
+		</tr>
+
+		<tr style="background-color: #51b59042;">
+			<td style="width: 110px; text-align: center; vertical-align: top;">11:00-12:30</td>
+			<td>
+				<b>Paper Session 1: Privacy and (X)AI</b><br />
+
+				<p style="margin: 0.8em 0 0.6em 0;"><b>- The Interlocutor Effect: Why LLMs Leak More Privacy to Agents Than Humans</b> by Faouzi El Yagoubi, Godwin Badu-Marfo and Ranwa Al Mallah. <i>Large Language Models (LLMs) alter their privacy behavior based on the perceived identity of their interlocutor. While safety mechanisms typically prevent LLMs from releasing Personally Identifiable Information (PII) to human users, these models tend to reveal more sensitive data when addressing another AI agent. We refer to this as the Interlocutor Effect. Through an ablation study, we confirm that the technical nature of the recipient drives this effect, thereby diminishing the model’s caution regarding privacy. To explore this further, we introduce the Attention Suppression Hypothesis, which posits that safety-aligned attention heads become inactive during interactions with agents. We assess this quantitatively by comparing human-directed and agent-directed prompts in 222 sensitive scenarios. Our findings, drawn from 3,464 interactions, indicate that portraying the recipient as an AI agent elevates PII leakage by up to 23 percentage points. Initial experiments on Llama-3.1-8B-Instruct corroborate this: deactivating one safety head induces leakage, whereas reactivating it reinstates privacy safeguards. We consider the implications for developing secure multi-agent systems.</i></p>
+
+				<p style="margin: 0.8em 0 0.6em 0;"><b>- Addressing Labelled Data Scarcity: Taxonomy-Agnostic Annotation of PII Values in HTTP Traffic using LLMs</b> by Thomas Cory and Axel Küpper. <i>Automated privacy audits of web and mobile applications often analyse outbound HTTP traffic to detect Personally Identifiable Information (PII) leakage. However, existing learning-based detectors typically depend on scarce, manually labelled traffic and are tightly coupled to fixed label taxonomies, limiting transferability across domains and evolving definitions of PII. This paper investigates whether Large Language Models (LLMs) can support taxonomy-agnostic annotation of explicitly transmitted PII values in HTTP message bodies when the taxonomy is provided at runtime. We introduce a multi-stage LLM-based pipeline that combines deterministic pre-processing with label-level classification and targeted instance-level value annotation. To enable controlled evaluation and exemplar-based prompting without relying on sensitive real-user captures, we further propose a LLM-based generator for synthetic HTTP traffic with ground-truth PII annotations derived from runtime-specified label taxonomies. We evaluate the approach across three taxonomies spanning different PII domains and granularity levels. Results show that the pipeline accurately detects the presence of PII types and extracts corresponding values, while sensitivity to taxonomy design remains. Overall, our findings position LLMs as a promising foundation for flexible, taxonomy-agnostic traffic annotation, facilitating scalable evaluation and more agile privacy auditing pipelines.</i></p>
+
+				<p style="margin: 0.8em 0 0;"><b>- Can We Explain What We Anonymize? On the Impact of Data Anonymization on Post-hoc Model Explanations</b> by Casper Lauge Nørup Koch, Mina Alishahi and Gaurav Choudhary. <i>Privacy-preserving data publishing and explainable artificial intelligence (XAI) are both essential for trustworthy machine learning, yet their interaction remains largely underexplored. In practice, models are often trained on anonymized datasets, but little is known about how classical anonymization techniques affect post-hoc explanations. In this paper, we provide a systematic empirical study of how feature attribution rankings change under widely used anonymization models, including k-anonymity, ℓ-diversity, t-closeness, and (α, k)-anonymity. Across multiple real-world datasets and classifiers, we compare explanations generated by SHAP and LIME and quantify their stability using rank correlation and hypothesis testing. Our findings reveal a fundamental trade-off: explainable privacy-preserving models are feasible under mild privacy constraints, but strict anonymization requirements often lead to unstable explanations and severe utility degradation.</i></p>
+			</td>
+		</tr>
+
+		<tr>
+			<td style="width: 110px; text-align: center;">12:30-13:30</td>
+			<td>Lunch</td>
+		</tr>
+
+		<tr style="background-color: #51b59042;">
+			<td style="width: 110px; text-align: center; vertical-align: top;">13:30-15:00</td>
+			<td>
+				<b>Paper Session 2: Networks and Engineering</b><br />
+
+				<p style="margin: 0.8em 0 0.6em 0;"><b>- ASTIV: A Classification Framework for Privacy-Respecting WiFi Sensing</b> by Erik Krempel and Kilian Osenstätter. <i>Modern sensing systems are increasingly capable of monitoring private spaces with high precision. WiFi sensing introduces new privacy threats to environments previously considered secure, yet systematic Privacy Engineering approaches to address these risks remain underdeveloped. Based on a comprehensive review of 60+ scientific publications, this work demonstrates that current systems achieve over 90% accuracy in recognizing activities and identifying individuals—indicating that privacy-invasive capabilities are not merely theoretical but practically deployable. This paper addresses the gap between WiFi sensing’s technical capabilities and Privacy Engineering frameworks needed for responsible deployment. We present four interconnected contributions: (1) a systematic five-class classification framework (ASTIV) enabling operators, regulators, and users to communicate about sensing capabilities; (2) a mapping of WiFi sensing classes to GDPR requirements, demonstrating how regulatory obligations escalate with sensing sophistication; (3) a transparency approach combining visual labeling with clear capability naming to support user agency; and (4) a synthesis of privacy-respecting system design principles that operationalize Privacy-by-Design. Together, these contributions establish that Privacy-respecting WiFi sensing deployment is technically feasible but requires coordinated effort across standardization, governance, and system architecture—bridging the gap between technical capability and Privacy Engineering practice.</i></p>
+
+				<p style="margin: 0.8em 0 0.6em 0;"><b>- Location Privacy Protection through Road Network Adaptability and User Mobility Prediction</b> by Lara Santos, Mariana Cunha and João Vilela. <i>The widespread collection and sharing of location data enable a wide range of location-based services but also raise significant privacy concerns, as mobility traces can reveal highly sensitive personal information. Geo-Indistinguishability has emerged as a principled approach to location privacy by adding controlled noise to users’ positions. However, existing mechanisms typically rely on fixed privacy budgets or adapt them based solely on past or current locations, while often ignoring both future mobility patterns and road network constraints. In this paper, we propose location privacy-preserving mechanisms that leverage the structure of road networks, as well as mobility prediction, to improve the achieved privacy-utility trade-off. To do so, we developed two novel complementary approaches that: (i) adapt the privacy budget dynamically based on the prediction of future locations, and (ii) aggregate locations according to the proximity of their predicted future positions. Experimental results show that incorporating predictability of upcoming locations enables more effective privacy budget allocation, improves utility, and increases resilience against location prediction attacks. These findings highlight prediction-aware obfuscation as a promising direction for enhancing Geo-Indistinguishability-based location privacy mechanisms.</i></p>
+
+				<p style="margin: 0.8em 0 0;"><b>- PEMM: A Privacy Engineering Maturity Model</b> by Andreas M. Binder and Immanuel Kunz. <i>The growing importance of privacy and data protection in software development, coupled with evolving legal regulations, underscores the need for systematic privacy engineering. While some practical privacy-focused engineering models exist, especially incrementally designed Maturity Models (MMs), they often fall short in comprehensiveness and practicability. This paper explores privacy-focused MMs, identifying their gaps and developing a new model based on the insights. We first establish a baseline of privacy engineering activities from the literature, assess their coverage in existing privacy-oriented MMs, and analyze the maturity levels they define. Our analysis reveals both strengths and significant gaps in current models, particularly regarding their guidance for incremental improvement. To address these gaps, we then propose the Privacy Engineering Maturity Model (PEMM), which introduces explicit maturity levels for individual activities. PEMM provides organizations with a structured, incremental framework to assess, strengthen, and evolve their privacy engineering practices, thereby enhancing regulatory resilience and embedding privacy directly into development processes.</i></p>
+			</td>
+		</tr>
+
+		<tr>
+			<td style="width: 110px; text-align: center;">15:00-15:30</td>
+			<td>Coffee Break</td>
+		</tr>
+
+		<tr style="background-color: #51b59042;">
+			<td style="width: 110px; text-align: center; vertical-align: top;">15:30-16:20</td>
+			<td>
+				<b>- AI Privacy in Context: A Tale in 3 Parts</b>, <u>Keynote</u> by Katharine Jarmul.
+				<p style="margin: 0.4em 0 0;"><i>In this keynote, we'll walk through mixtures of theory and practice in today's large AI systems. We'll explore how privacy functions in mathematical, scientific and measurable ways in machine learning systems, and also how it works in design, cultural and societal ways. At the end, we'll see that perhaps we cannot choose either transparency, compliance and design or privacy-enhancing technologies; but instead why it's imperative we do both.</i></p>
+			</td>
+		</tr>
+
+		<tr style="background-color: #51b59042;">
+			<td style="width: 110px; text-align: center; vertical-align: top;">16:20-17:20</td>
+			<td>
+				<b>Paper Session 3: User-Centric Privacy</b><br />
+
+				<p style="margin: 0.8em 0 0.6em 0;"><b>-Alohomora! Facilitating Personal Data Access Through Automated Graph Extraction and Integration</b> by Nicola Leschke, Karl Wolf and Frank Pallas. <i>Privacy rights to data access and data portability are fundamental prerequisites for sovereign data subjects. A core instrument in this regard is the subjects’ right to receive a copy of their personal data, often delivered in the form of heterogeneous data packages referred to as subject access request packages (SARPs). Capturing and integrating such data in a unified manner remains challenging, hindering use cases such as personal data dashboards or personal information management systems. Moreover, the heterogeneous SARP formats hinder automated transfer of such SARPs across controllers, as required by the principle of data portability. Applying and adopting established concepts from the domain of data integration such as graph inference and semantic enrichment to the specific givens of SARPs, we address three challenges engineers face when building user-centric applications on SARP data to inform data subjects about data processing practices or to enable data portability: First, we tackle the challenge of overly heterogeneous data formats and structures being used in practice by providing a graph-structured data format and a fully implemented transformer for capturing arbitrary SARPs in a (syntactically) unified form, practically validated on a real-world SARP dataset. Second, we refine said format by enriching the SARPs with inferred semantics to help data subjects understand it. Finally, we provide an implementation of the developed and enriched SARP graph model. Altogether, our contributions lay the conceptual groundwork for turning the mere concepts of data access and data portability into valuable information for data subjects.</i></p>
+
+				<p style="margin: 0.8em 0 0;"><b>-Trading Latency for Privacy: Mixnet Usability for Email and Instant Messaging</b> by Harry Halpin, Daniel Nemet and Claudia Diaz. <i>Mixnets are a privacy-enhancing technology that strives to make the senders and receivers of message anonymous via sending messages to nodes that “mix” the messages together, increasing latency to prevent surveillance. We aim to quantify the acceptable latency for users in message-based technologies like email and instant messaging. We ran a N=24 study of the real-world usage of mixnet-enabled email and instant messaging applications. We show significant differences although large variance between the average acceptable latency for email (8 min.) and instant messaging (9 seconds). Users have large differences in tolerance for latency between email and instant messaging, but are willing to tolerate a degree of increased latency for privacy.</i></p>
+			</td>
+		</tr>
+
+		<tr style="background-color: #51b59042;">
+			<td style="width: 110px; text-align: center;">17:20-17:50</td>
+			<td><b>Panel</b></td>
+		</tr>
+
+		<tr style="background-color: #51b59042;">
+			<td style="width: 110px; text-align: center;">17:50-18:00</td>
+			<td><b>Closing remarks, best presentation vote, and wrap-up</b></td>
+		</tr>
+	</tbody>
+</table>
 </section>
-</article>
 
 <nav class="navigation-paging" id="" role="navigation">
 <h1 class="screen-reader-text">Post navigation</h1>
